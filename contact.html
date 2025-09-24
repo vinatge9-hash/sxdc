@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Contact - Brew & Beans</title>
+  <meta name='description' content='Get in touch with Brew & Beans for inquiries, reservations, or catering. We’d love to hear from you.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='font-sans antialiased'>
+  <!-- Navigation -->
+  <header class='bg-white shadow-lg sticky top-0 z-50' aria-label='Main Navigation'>
+    <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <div class='flex justify-between items-center h-16'>
+        <div class='flex-shrink-0 flex items-center'>
+          <a href='index.html' class='text-2xl font-bold text-gray-800'>Brew & Beans</a>
+        </div>
+        <nav class='hidden md:flex space-x-4'>
+          <a href='index.html' class='text-gray-700 hover:text-gray-900'>Home</a>
+          <a href='about.html' class='text-gray-700 hover:text-gray-900'>About</a>
+          <a href='contact.html' class='text-gray-700 hover:text-gray-900'>Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
+    <h1 class='font-[Montserrat] text-4xl font-bold text-gray-800 mb-6'>Contact Brew & Beans</h1>
+    <p class='text-lg text-gray-700 leading-relaxed mb-6'>We’d love to hear from you. Whether you’re planning a catering event, a reservation, or just have a question, our team is ready to help.</p>
+
+    <form class='bg-white rounded-lg p-6 shadow' action='#' method='post' aria-label='Contact form'>
+      <div class='grid grid-cols-1 md:grid-cols-2 gap-4'>
+        <div>
+          <label class='block text-sm font-medium text-gray-700'>Name</label>
+          <input type='text' name='name' required class='mt-1 w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400'>
+        </div>
+        <div>
+          <label class='block text-sm font-medium text-gray-700'>Email</label>
+          <input type='email' name='email' required class='mt-1 w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400'>
+        </div>
+      </div>
+      <div class='mt-4'>
+        <label class='block text-sm font-medium text-gray-700'>Subject</label>
+        <select name='subject' class='mt-1 w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400'>
+          <option>General Inquiry</option>
+          <option>Catering</option>
+          <option>Reservations</option>
+          <option>Feedback</option>
+        </select>
+      </div>
+      <div class='mt-4'>
+        <label class='block text-sm font-medium text-gray-700'>Message</label>
+        <textarea name='message' rows='5' required class='mt-1 w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400'></textarea>
+      </div>
+      <div class='mt-4'>
+        <button type='submit' class='bg-amber-900 text-white px-6 py-2 rounded-md hover:bg-amber-800 transition duration-300'>Send Message</button>
+      </div>
+    </form>
+
+    <section class='mt-8'>
+      <h2 class='text-2xl font-semibold font-[Montserrat] text-gray-800 mb-2'>Our Location</h2>
+      <p class='text-sm text-gray-600'>123 Roast Lane, Bean Town • Mon-Sun 7:00 AM - 8:00 PM</p>
+      <div class='mt-4'>
+        <img src="https://images.pexels.com/photos/3352765/pexels-photo-3352765.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt='Coffee shop exterior' class='w-full h-64 object-cover rounded-md'>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class='bg-amber-900 text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-12'>
+      <div class='flex justify-between items-center flex-wrap gap-4'>
+        <p class='text-sm text-gray-200'>© 2025 Brew & Beans. All rights reserved.</p>
+        <a href='index.html' class='text-sm text-gray-200 hover:underline'>Back to Home</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple form feedback
+    const form = document.querySelector('form');
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const btn = this.querySelector('button[type="submit"]');
+        if (btn) {
+          btn.textContent = 'Sending...';
+          setTimeout(() => {
+            btn.textContent = 'Send Message';
+            alert('Thank you! Your message has been received.');
+            form.reset();
+          }, 1200);
+        }
+      });
+    }
+  </script>
+</body>
+</html>
