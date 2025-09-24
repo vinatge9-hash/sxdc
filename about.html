@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>About - Brew & Beans</title>
+  <meta name='description' content='Learn the story behind Brew & Beans, our sourcing ethics, and our commitment to community and quality coffee.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='font-sans antialiased'>
+  <!-- Navigation -->
+  <header class='bg-white shadow-lg sticky top-0 z-50' aria-label='Main Navigation'>
+    <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <div class='flex justify-between items-center h-16'>
+        <div class='flex-shrink-0 flex items-center'>
+          <a href='index.html' class='text-2xl font-bold text-gray-800' aria-label='Home'>Brew & Beans</a>
+        </div>
+        <nav class='hidden md:flex space-x-4'>
+          <a href='index.html' class='text-gray-700 hover:text-gray-900'>Home</a>
+          <a href='about.html' class='text-gray-700 hover:text-gray-900'>About</a>
+          <a href='contact.html' class='text-gray-700 hover:text-gray-900'>Contact</a>
+        </nav>
+        <div class='md:hidden'>
+          <button id='mobile-menu-button' class='text-gray-700 hover:text-gray-900 focus:outline-none'>
+            <svg width='24' height='24' fill='none' stroke='currentColor' stroke-width='2' viewBox='0 0 24 24'>
+              <path d='M4 6h16M4 12h16M4 18h16' />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id='mobile-menu' class='md:hidden hidden'>
+      <div class='px-2 pt-2 pb-3 space-y-1'>
+        <a href='index.html' class='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100'>Home</a>
+        <a href='about.html' class='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100'>About</a>
+        <a href='contact.html' class='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100'>Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
+    <h1 class='font-[Montserrat] text-4xl font-bold text-gray-800 mb-4'>Our Story</h1>
+    <p class='text-lg text-gray-700 leading-relaxed mb-6'>Brew & Beans began with a simple belief: great coffee should bring people together. We source beans from small farms that prioritize fair pay and sustainable practices, then roast in small batches to preserve flavor and aroma. Our cafe is a space for community, creativity, and connection.</p>
+
+    <section class='my-8'>
+      <h2 class='text-2xl font-semibold font-[Montserrat] text-gray-800 mb-4'>Core Values</h2>
+      <div class='grid grid-cols-1 md:grid-cols-3 gap-6'>
+        <article class='p-5 bg-gray-50 rounded-lg border border-gray-100'>
+          <h3 class='font-semibold'>Quality First</h3>
+          <p class='text-sm text-gray-600'>We obsess over every bean, roast, and pour to ensure consistency in every cup.</p>
+        </article>
+        <article class='p-5 bg-gray-50 rounded-lg border border-gray-100'>
+          <h3 class='font-semibold'>Ethical Sourcing</h3>
+          <p class='text-sm text-gray-600'>Direct relationships with farmers ensure fair wages and sustainable farming.</p>
+        </article>
+        <article class='p-5 bg-gray-50 rounded-lg border border-gray-100'>
+          <h3 class='font-semibold'>Community Focus</h3>
+          <p class='text-sm text-gray-600'>Our cafe is a hub for local artists, students, and neighbors to connect.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class='my-8'>
+      <h2 class='text-2xl font-semibold font-[Montserrat] text-gray-800 mb-4'>Meet Our Team</h2>
+      <div class='grid grid-cols-1 md:grid-cols-3 gap-6'>
+        <div class='bg-white rounded-lg p-4 shadow'>
+          <img src="https://images.unsplash.com/photo-1604138808764-e873853af44e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw3fHxzbWlsaW5nJTIwYmFyaXN0YSUyMHBvcnRyYWl0fGVufDB8MHx8fDE3NTg2ODg4MjV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt='Barista portrait' class='w-full h-40 object-cover rounded mb-2'>
+          <h3 class='font-semibold'>Alex, Head Barista</h3>
+          <p class='text-sm text-gray-600'>Specializes in latte art and flavor profiling.</p>
+        </div>
+        <div class='bg-white rounded-lg p-4 shadow'>
+          <img src="https://images.unsplash.com/photo-1574088332960-4d92e1f0efd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwxMHx8cm9hc3RlcnklMjB0ZWFtJTIwYXQlMjB3b3JrfGVufDB8MHx8fDE3NTg2ODg4MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt='Roastery team at work' class='w-full h-40 object-cover rounded mb-2'>
+          <h3 class='font-semibold'>Priya, Roastery Lead</h3>
+          <p class='text-sm text-gray-600'>Oversees the roasting schedule to guarantee freshness.</p>
+        </div>
+        <div class='bg-white rounded-lg p-4 shadow'>
+          <img src="https://pixabay.com/get/g8cb2b5b3e1d3fcc0aa08f1dfdb2ee6021ac85d460d453104692a04cd525eb132043b36adc6bebc9f8e8028aa59550b28cc4ee3699c0b42981ec700f8f523e484_640.jpg" alt='Cafe team collaborating' class='w-full h-40 object-cover rounded mb-2'>
+          <h3 class='font-semibold'>Luis, Café Manager</h3>
+          <p class='text-sm text-gray-600'>Creates welcoming experiences for every guest.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class='bg-amber-900 text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-12'>
+      <div class='grid grid-cols-1 md:grid-cols-3 gap-8'>
+        <div>
+          <h3 class='text-2xl font-bold mb-2'>Brew & Beans</h3>
+          <p class='text-sm text-gray-200'>Coffee craft with heart. Ethical sourcing. Community-driven.</p>
+        </div>
+        <div>
+          <h4 class='text-lg font-semibold mb-2'>Contact</h4>
+          <p class='text-sm text-gray-200'>123 Roast Lane, Bean Town</p>
+          <p class='text-sm text-gray-200'>Phone: (555) 012-3456</p>
+        </div>
+        <div>
+          <h4 class='text-lg font-semibold mb-2'>Hours</h4>
+          <p class='text-sm text-gray-200'>Mon-Sun: 7:00 AM – 8:00 PM</p>
+        </div>
+      </div>
+      <hr class='border-gray-700 my-6 opacity-50'>
+      <p class='text-sm text-gray-200'>© 2025 Brew & Beans. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    }
+  </script>
+</body>
+</html>
